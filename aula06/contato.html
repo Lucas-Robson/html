@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato - Santos FC</title>
+</head>
+<body>
+    <h1>ENTRE EM CONTATO</h1>
+    
+    <form>
+        <label>Nome</label><br>
+        <input type="text" id="Nome"><br><br>
+        
+        <label>Sobrenome</label><br>
+        <input type="text" id="Sobrenome"><br><br>
+    </form>
+
+    <h2>Botões tipo radio</h2>
+    <form>
+        <p>Escolha seu time preferido</p>
+
+        <input type="radio" id="SantosFC" name="time" value="Santos FC">
+        <label for="SantosFC">Santos FC</label><br>
+
+        <input type="radio" id="Peixe" name="time" value="Peixe">
+        <label for="Peixe">Peixe</label><br>
+
+        <input type="radio" id="Alvinegro" name="time" value="Alvinegro Praiano">
+        <label for="Alvinegro">Alvinegro Praiano</label><br>
+
+        <input type="radio" id="Santastico" name="time" value="Santástico">
+        <label for="Santastico">Santástico</label><br>
+    </form>
+
+    <h2>Botões tipo checkbox</h2>
+    <form>
+        <p>que time foi 5 vezes campeaõ seguido brasileiro</p>
+
+        <input type="checkbox" id="SantosFC_cb" value="Santos FC">
+        <label for="SantosFC_cb">Santos FC</label><br>
+
+        <input type="checkbox" id="Peixe_cb" value="Peixe">
+        <label for="Peixe_cb">Peixe</label><br>
+
+        <input type="checkbox" id="Alvinegro_cb" value="Alvinegro Praiano">
+        <label for="Alvinegro_cb">Alvinegro Praiano</label><br>
+
+        <input type="checkbox" id="Santastico_cb" value="Santástico">
+        <label for="Santastico_cb">Santástico</label><br>
+    </form>
+    <h3>Botão enviar</h3>
+</form>
+<h3> Botao Enviar (Submit)</h3>
+<form action="https://formtester.goodbytes/
+post.php" method="post">
+<label>Nome</label><br>
+<input type="text" id="Nome"><br>
+<label>Sobrenome</label><br>
+<input type="text" id="Sobrenome"><br><br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
