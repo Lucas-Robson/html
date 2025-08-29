@@ -1,46 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8, suportando acentos -->
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o site ser responsivo em dispositivos móveis -->
-    <title>Santos FC</title> <!-- Título que aparece na aba do navegador -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portifolio</title> <!-- Título que aparece na aba do navegador -->
+    <style>
+        body {
+            background-color: rgb(206, 206, 206);
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0 0 80px; /* espaço para o rodapé fixo */
+            color: #111;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: rgb(0, 4, 255);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 { margin: 0; font-size: 26px; }
+        header p { margin: 4px 0 0; font-size: 14px; }
+
+        /* Container central (coluna do site) */
+        .container {
+            width: 90%;
+            max-width: 760px;
+            margin: 18px auto;
+        }
+
+        /* Foto de perfil centralizada */
+        .profile {
+            display: block;
+            margin: 18px auto;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgba(255,255,255,0.95);
+            background-color: #fff;
+        }
+
+        /* Cada "caixinha" branca separada */
+        .card {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 18px;
+            border-radius: 10px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+            text-align: left;
+        }
+
+        .card h2 { margin: 0 0 10px 0; font-size: 20px; }
+        .card p { margin: 0 0 10px 0; line-height: 1.5; color: #222; }
+        .card ul { margin: 8px 0 0 18px; }
+
+        /* Rodapé fixo */
+        footer {
+            background-color: #001affe5;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+
+        /* responsivo */
+        @media (max-width: 600px) {
+            .profile { width: 160px; height: 160px; }
+            .container { width: 94%; }
+        }
+    </style>
 </head>
 
-<body style="background-image: url('Captura de tela 2025-08-15 132455.png'); background-size: cover; background-attachment: fixed;">
-    <!-- Define o fundo da página com uma imagem, ajustada para cobrir toda a tela e fixa ao rolar -->
-
+<body>
     <!-- Cabeçalho do site -->
-    <header style="background-color: rgb(0, 0, 0); color: white; padding: 20px; text-align: center; position: relative;">
-        <h1>Santos Futebol Clube </h1> <!-- Título principal -->
-        <p>O time da Vila mais famosa do mundo</p> <!-- Subtítulo -->
-        
+    <header>
+        <h1>Lucas Robson | portifolio</h1> <!-- Título principal -->
+        <p>Estudante de Desenvolvimento de Sistemas</p> <!-- Subtítulo -->
     </header>
 
-    <!-- Conteúdo principal -->
-    <main style="background-color: rgba(255, 255, 255, 0.80); margin: 40px; padding: 20px; border-radius: 10px;text-align: center;">
-        <!-- Caixa branca semitransparente para melhor leitura do texto -->
+    <div class="container">
+     
+        <img src="WhatsApp Image 2025-08-28 at 4.21.38 PM.jpeg" alt="Foto de perfil - Lucas Robson" class="profile">
 
-        <h2 style="color: #000000;">História</h2> <!-- Subtítulo da seção -->
-        <p>
-           O Santos Futebol Clube foi fundado por iniciativa de três esportistas da cidade, Francisco Raymundo Marques, Mário Ferraz de Campos e Argemiro de Souza Júnior. Eles convidaram a todos os interessados para participar da reunião inaugural do novo clube, que foi constituído para ser destinado a prática do futebol, que no começo do século passado estava engatinhando no Brasil. A reunião histórica aconteceu na tarde do domingo, 14 de abril de 1912, na sede do Clube Concórdia, na antiga rua do Rosário, 18 (hoje rua João Pessoa, 8/10). São considerados como sócios-fundadores todos os 39 participantes dessa reunião. No dia da fundação, o nome da entidade foi sugerido por Edmundo Jorge de Araújo: Santos Foot-Ball Club e as cores dos uniformes da nova agremiação, que seria presidida no primeiro ano de existência por Sizino Patusca, eram o azul e o branco, com fios dourados entre elas. No dia 31 de março do ano seguinte as cores do Clube, por sugestão de Paulo Peluccio, passaram a ser calção branco e camisa listrada de branco e preto. O Conselho Deliberativo do Clube teve início no dia 28 de janeiro de 1932 e o primeiro presidente foi Flamínio Levy. No começo de sua gloriosa caminhada entra para a vida do clube, Urbano Vilella Caldeira Filho, um homem que dedicou toda a vida ao time que tanto amou até o falecimento, no ano de 1933. Urbano Caldeira foi atleta, técnico, dirigente e hoje é um dos patronos do Santos Futebol Clube. Em sua homenagem o nome do estádio que foi erguido, no ano de 1916, leva seu nome como reconhecimento de seu amor ao Alvinegro Praiano. As primeiras conquistas importantes na história do time começaram em 1913 com a conquista do campeonato santista, repetindo o feito em 1915, jogando como o apelido de “União Futebol Clube” por imposição da diretoria da Associação Paulista de Esportes Atléticos. No ano de 1927 surge no time um ataque que até hoje não foi superado em jogos do campeonato paulista, com uma média de 6,25 gols por partida e que ficou eternizado como o time do “Ataque dos 100 gols”. Ataque esse que era formado por Omar, Camarão, Feitiço, Araken e Evangelista. O primeiro Campeonato Paulista vencido pelo Clube é o do ano de 1935, título esse conquistado na casa do adversário na capital paulista. A equipe volta a ganhar os certames paulistas em 1955 e 1956 e novamente no ano de 1958, quando então já tinha em suas fileiras um garoto apelidado de Pelé, que nos anos seguintes se tornaria o melhor jogador de futebol em todos os tempos. Na chamada “Década de Ouro”, nos anos de 1960, o time conquistou o mundo exibindo um futebol digno de aplausos, com conquistas constantes, não só no futebol brasileiro como também no planeta. A coroação maior desse time ícone da cidade de Santos aconteceu no ano de 1962, quando o Alvinegro mais famoso do mundo venceu todos os certames mais importantes disputados nesse ano e sagrando-se no ano seguinte Bicampeão Mundial. A FIFA outorgou ao clube o título de “O melhor time do século nas Américas”. Nos dias atuais o Santos Futebol Clube é considerado como o legítimo Octocampeão Brasileiro por suas conquistas nacionais nos anos de 1961 a 1965, 1968, 2002 e 2004. Nos campeonatos paulistas foram 22 conquistas, na Taça Libertadores da América foram 03 conquistas e nos Mundiais Interclubes foram duas conquistas. Revelando jogadores como Araken Patusca, Antoninho, Pelé, Robinho, Paulo Henrique Ganso e Neymar o time continua sendo o orgulho de toda a gente Alvinegra nos seus 111 anos de história.
-        </p>
+        <!-- Caixa: História -->
+        <section class="card" id="historia">
+            <h2>sobre mim</h2>
+            <p>
+               Meu nome é Lucas Carvalho, tenho 16 anos, sou estudante do SESI e curso Técnico em Desenvolvimento de Sistemas no SENAI, aprendendo programação e banco de dados. Sou cristão, toco teclado e gosto muito de atividades físicas, como treino de hipertrofia, muay thai, jiu-jitsu e futebol (Santos FC ⚪⚫). A disciplina do esporte e da música me ajuda a ter foco e dedicação também nos estudos e projetos, sempre buscando evoluir como pessoa e como profissional.
+            </p>
+                 <h2>Curiosidades sobre mim</h2>
+            <ul>
+                <li>eu toco Teclado</li>
+                <li>Luto Jiu-Jitsu</li>
+                <li>Faço academia</li>
+            </ul>
+        </section>
 
-        <p>
-            Entre suas maiores conquistas estão a Taça Libertadores da América (1962, 1963 e 2011) e o Mundial Interclubes (1962 e 1963). 
-            O Santos também revelou grandes jogadores como Neymar, Robinho, Rodrygo, entre outros.
-        </p>
+    
 
+        <!-- Caixa: Curiosidades -->
+    
 
-        </a>
-        <br><br>
-        <!-- Link de retorno -->
-        <a href="pag.html" style="color: blue; font-weight: bold;">Click aqui</a>
-    </main>
+        <!-- Caixa: Meus Projetos -->
+        <section class="card" id="projetos">
+            <h2>Meus Projetos</h2>
+            <p><strong>Projeto 1 - Nome do projeto</strong><br>
+            Breve descrição do projeto.<br>
+            <a href="#" target="_blank">Link do GitHub</a></p>
+
+            <p><strong>Projeto 2 - Nome do projeto</strong><br>
+            Breve descrição do projeto.<br>
+            <a href="#" target="_blank">Link do GitHub</a></p>
+        </section>
+
+        <!-- Caixa: Contato -->
+        <section class="card" id="contato">
+            <h2>Contato</h2>
+            <p>[Lucas.filhotar@gmail.com] | [lukas.rbz7] | [11 93755-6610]</p>
+        </section>
+    </div>
 
     <!-- Rodapé -->
-    <footer style="background-color: #000000; color: #ffffff; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
-        Todos os Direitos Reservados
+    <footer>
+        Todos os Direitos Reservados — 2025 | Lucas Robson
     </footer>
 
 </body>
