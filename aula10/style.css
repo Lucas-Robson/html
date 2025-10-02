@@ -1,0 +1,57 @@
+/* style.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* fundo clarinho */
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff4d4d; /* vermelho claro */
+    color: white;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    z-index: 10;
+}
+
+p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* Estilo base das caixas */
+div{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Caixa no canto inferior direito */
+.caixa1{
+    background-color: #ffcc00; /* amarelo */
+    right: 15px;
+    bottom: 15px;
+    position: absolute;
+}
+
+/* Caixa sticky */
+.caixa2{
+    background-color: #663399; /* roxo escuro */
+    position: sticky;
+    top: 60px; /* cola abaixo do título */
+}
+
+/* Caixa relative */
+.caixa3 {
+    background-color: #00cccc; /* ciano */
+    position: relative;
+    left: 300px;
+}
