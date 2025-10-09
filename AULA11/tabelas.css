@@ -1,0 +1,56 @@
+ body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+            text-align: left;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 2px solid #4CAF50;
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            
+          
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+
+        }
+
+     
+        .horarios th {
+            background-color: #0077b6;
+
+        }
+
+        .reprovado {
+            background-color: #ff0000;
+            font-weight: bold;
+       
+        }
