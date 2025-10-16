@@ -1,0 +1,25 @@
+button{
+    display: block;
+    margin: 20px 0;
+}
+.shadow{
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+.sem{
+    background-color:paleturquoise;
+}
+.sem:hover{
+    background-color:lightseagreen;
+    color:white;
+}
+.trasition{
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+.linha{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+img src {
+    border-radius: 10px;
+    transition: width 0.4s ease, filter 0.4s ease;
+}
