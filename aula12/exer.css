@@ -1,0 +1,158 @@
+body { 
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* ---------- EX 1 ---------- */
+.ex1 {
+    background-color: paleturquoise;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.ex1:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+/* ---------- EX 2 ---------- */
+.ex2 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ex2:hover {
+    transform: scale(1.2);
+    background-color: #0056b3;
+}
+
+/* ---------- EX 3 ---------- */
+.ex3 {
+    background-color: #28a745;
+    color: white;
+    border: 2px solid green;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease 0.5s, color 0.5s ease 0.5s, border-color 0.5s ease 0.5s;
+}
+
+.ex3:hover {
+    background-color: #2800d8;
+    border-color: blueviolet;
+    color: white;
+}
+
+/* ---------- EX 4 ---------- */
+.card {
+    background-color: #fff;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: #e6f0ff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* ---------- EX 5 ---------- */
+.o1, .o2, .o3 {
+    width: 250px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    color: white;
+    font-size: 16px;
+    transition: font-size 0.4s ease, color 0.4s ease;
+}
+
+/* Parágrafo sem delay */
+.o1:hover {
+    font-size: 20px;
+    color: #000;
+}
+
+/* Parágrafo suave */
+.o2 {
+    transition: font-size 0.8s ease, color 0.8s ease;
+}
+.o2:hover {
+    font-size: 22px;
+    color: #222;
+}
+
+/* Parágrafo com delay */
+.o3 {
+    transition: font-size 0.8s ease 0.5s, color 0.8s ease 0.5s;
+}
+.o3:hover {
+    font-size: 22px;
+    color: #333;
+}
+
+/* ---------- EX 6 ---------- */
+.img-container {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.2);
+}
+
+/* ---------- EX 7 ---------- */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #007bff;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
