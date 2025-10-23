@@ -1,0 +1,125 @@
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: mover-e-cor 4s infinite;
+}
+
+@keyframes mover-e-cor {
+    0% {
+        left: 0;
+        background-color: red;
+    }
+    50% {
+        left: 200px;
+        background-color: blue;
+    }
+    100% {
+        left: 0;
+        background-color: red;
+    }
+}
+
+.quadrado-cor {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: mudar-cor 6s infinite;
+}
+
+@keyframes mudar-cor {
+    0% { background-color: red; }
+    33% { background-color: green; }
+    66% { background-color: blue; }
+    100% { background-color: red; }
+}
+
+
+.botao {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    animation: animar-botao 5s infinite;
+}
+
+@keyframes animar-botao {
+    0% {
+        background-color: blue;
+        color: white;
+        transform: scale(1);
+    }
+    50% {
+        background-color: red;
+        color: yellow;
+        transform: scale(1.2);
+    }
+    100% {
+        background-color: blue;
+        color: white;
+        transform: scale(1);
+    }
+}
+
+.texto-piscando {
+    font-size: 24px;
+    animation: piscar 2s infinite;
+    background-color: black;
+}
+
+@keyframes piscar {
+    0% { color: red; }
+    33% { color: green; }
+    66% { color: blue; }
+    100% { color: red; }
+}
+
+.caixa-sol {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 174, 0, 0.685);
+}
+
+.sol {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: nascer-sol 4s infinite;
+}
+
+@keyframes nascer-sol {
+    0% { bottom: -50px; }
+    100% { bottom: 150px; }
+}
+
+.coracao {
+    width: 100px;
+    height: 100px;
+    animation: bater-coracao 1s infinite;
+}
+
+@keyframes bater-coracao {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.texto-flutuante {
+    font-size: 24px;
+    animation: flutuar 3s ease-in-out infinite;
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}

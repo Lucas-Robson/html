@@ -1,0 +1,75 @@
+.quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+   animation-name: mudarCor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes mudarCor {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 360px;
+    animation-name: movimento;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes movimento {
+0% {
+    transform: translateX(0);
+}
+50% {
+    /* transform: translateX(100px); */
+}
+100% {
+    transform: translateX(200px);
+}
+}
+.circulo2 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 360px;
+    animation-name: aumentar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+img {
+margin-top: 100px;
+width: 300px;
+animation: andar 4s infinite;
+}
+@keyframes andar {
+0% {
+    transform: translateX(0) scale(1);
+
+}
+50% {
+    transform: translateX(200px) scale(1.2);
+}
+100% {
+    transform: translateX(0) scale(1);
+}
+}
