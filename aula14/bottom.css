@@ -1,0 +1,182 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    margin: 30px 0 15px;
+}
+
+/* Exercício 1 - Botões com hover */
+.botoes-hover {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.botoes-hover button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.b1 { background-color: crimson; }
+.b1:hover { background-color: tomato; }
+
+.b2 { background-color: royalblue; }
+.b2:hover { background-color: skyblue; }
+
+.b3 { background-color: seagreen; }
+.b3:hover { background-color: lightgreen; }
+
+/* Exercício 2 - Botão com active */
+.btn-active {
+    background-color: #444;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.btn-active:active {
+    transform: scale(0.9);
+}
+
+/* Exercício 3 - Inputs com focus */
+.inputs-focus {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inputs-focus input {
+    padding: 8px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.inputs-focus input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 10px dodgerblue;
+}
+
+/* Exercício 4 - Card com hover */
+.card {
+    width: 350px;
+    background-color: white;
+
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    margin: 20px auto;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h3, .card p {
+    padding: 10px;
+    margin: 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    background-color: #f8f9fa;
+}
+
+/* Exercício 5 - Galeria com filtro */
+.depresion {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.depresion img {
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.3s;
+   
+}
+
+.depresion img:hover {
+    filter: grayscale(100%);
+}
+
+/* Exercício 6 - Botão com estados */
+.btn-press {
+    background-color: gray;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    outline: none;
+    display: block;
+    margin: 20px auto;
+}
+
+.btn-press:hover {
+    background-color: lightblue;
+}
+
+.btn-press:active {
+    background-color: darkblue;
+    transform: scale(0.55);
+}
+
+.btn-press:focus {
+    box-shadow: 0 0 0 2px navy;
+}
+
+/* Exercício 7 - Formulário completo */
+.formulario {
+    max-width: 300px;
+    margin: 30px auto;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formulario input:focus {
+    border-color: teal;
+    box-shadow: 0 0 5px teal;
+}
+
+.formulario button {
+    width: 100%;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.formulario button:hover {
+    background-color: #006d6d;
+}
+
+.formulario button:active {
+    transform: scale(0.95);
+}
