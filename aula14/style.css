@@ -1,0 +1,26 @@
+div{
+
+width: 300px;
+height: 300px;
+border: 1px solid black;
+margin: 20px;
+
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caixa1{
+background:linear-gradient( 180deg, red,purple);
+}
+.caixa2{
+background:linear-gradient(to right, rgb(0, 195, 255),purple);
+}
+.caixa3{
+background:conic-gradient( from 90deg, yellow, green, blue);}
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: brown;
+}
